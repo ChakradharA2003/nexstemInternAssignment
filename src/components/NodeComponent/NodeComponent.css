@@ -1,0 +1,44 @@
+.custom-node {
+  padding: 10px 16px;
+  background-color: #ffffff;
+  border: 2px solid #6366f1;
+  border-radius: 8px;
+  font-size: 14px;
+  color: #111827;
+  font-weight: 500;
+  min-width: 160px;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+  position: relative;
+  transition: all 0.2s ease;
+}
+
+/* Label + Trash icon container */
+.label {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+}
+
+/* Hide trash icon by default */
+.delete-btn {
+  background: none;
+  border: none;
+  color: #ef4444;
+  cursor: pointer;
+  padding: 4px;
+  transition: color 0.2s ease;
+  opacity: 0;
+  pointer-events: none;
+  margin-left: auto;
+}
+
+/* Show on hover */
+.custom-node:hover .delete-btn {
+  opacity: 1;
+  pointer-events: auto;
+}
+
+.delete-btn:hover {
+  color: #b91c1c;
+}
